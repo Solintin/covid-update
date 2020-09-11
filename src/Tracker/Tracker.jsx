@@ -33,7 +33,7 @@ export default function Tracker(props) {
                 <div className='casesPink'>
                   <span>Active</span>
                   <span className='Active'>{active.toLocaleString()} </span>
-                  <span style={{ fontSize: 15 }}>+{props.covidApi.Global.NewConfirmed.toLocaleString()} </span>
+                  <span style={{ fontSize: 15 }}>+{props.covidApi.Global.NewConfirmed.toLocaleString() - props.covidApi.Global.NewRecovered.toLocaleString()} </span>
                 </div>
 
 
