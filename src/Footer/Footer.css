@@ -1,0 +1,46 @@
+ .containerHead{
+    background-color: white;
+    border:  1px solid whitesmoke;
+    padding: 15px;
+}
+.styles{
+    color: blue;
+    font-size: 20px;
+    font-weight: 900;
+    margin-top: 15px;
+   
+   
+}
+a{
+    text-decoration: none;
+}
+.bubble{
+    position: relative;
+    display: flex;
+    
+    flex-direction: column;
+  
+    border-radius: 5px;
+    opacity: .8;
+}
+.bubble::after{
+    position: absolute;
+    content: " ";
+    z-index: -1;
+    width: 210px;
+    height: 210px;
+    bottom: 10;
+    border-radius: 50%;
+    background-color: rgb(228, 233, 240);
+}
+.footer{
+display: flex;    
+
+justify-content: center;
+align-items: center;
+background-color: rgba(20, 24, 29, 0.808);
+padding: 20px;
+color: white;
+border-bottom-left-radius: 15px;
+border-bottom-right-radius: 15px;
+}

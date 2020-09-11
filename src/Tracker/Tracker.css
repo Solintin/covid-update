@@ -1,0 +1,139 @@
+.trackHeader{
+    font-size: 30px;
+    font-weight: 600;
+    padding: 15px 0;
+    margin-top: 10px;
+}
+.trackerPane{
+    background-color: white;
+    padding: 10px;
+   margin-bottom: 30px;
+    border-radius: 3px;
+}
+.casesBlue{
+    position: relative;
+    background-color: rgb(235, 242, 245);
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 5px ;
+    border-radius: 5px;
+    opacity: .8;
+
+}
+
+.casesBlue::after{
+    position: absolute;
+    content: " ";
+    width: 150px;
+    height: 150px;
+    z-index: -1;
+    border-radius: 50%;
+    background-color: rgba(176, 224, 228, 0.5);
+   
+}
+
+
+.casesRed{
+    position: relative;
+    background-color: rgba(218, 154, 154, 0.493);
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 5px ;
+    border-radius: 5px;
+    opacity: .8;
+
+}
+
+.casesRed::after{
+    position: absolute;
+    content: " ";
+    width: 150px;
+    height: 150px;
+    z-index: -1;
+    border-radius: 50%;
+    background-color: rgba(218, 154, 154, 0.493);
+   
+}
+.casesGreen{
+    position: relative;
+    background-color: rgba(188, 236, 204, 0.45);
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 5px ;
+    border-radius: 5px;
+    opacity: .8;
+
+}
+
+.casesGreen::after{
+    position: absolute;
+    content: " ";
+    width: 150px;
+    height: 150px;
+    z-index: -1;
+    border-radius: 50%;
+    background-color: rgba(188, 236, 204, 0.5);
+   
+}
+.casesPink{
+    position: relative;
+    background-color: rgba(238, 185, 150, 0.493);
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 5px ;
+    border-radius: 5px;
+    opacity: .8;
+
+}
+
+.casesPink::after{
+    position: absolute;
+    content: " ";
+    width: 150px;
+    height: 150px;
+    z-index: -1;
+    border-radius: 50%;
+    background-color: rgba(238, 185, 150, 0.493);
+   
+}
+
+.Active{
+    color: blue;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.Total{
+    color: chocolate;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.Recovered{
+    color: green;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.Death{
+    color: darkred;
+    font-size: 30px;
+    font-weight: bolder;
+}
