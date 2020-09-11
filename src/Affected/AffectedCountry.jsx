@@ -43,7 +43,7 @@ function AffCont(props) {
         TotalDeaths: chooseCountry[0].TotalDeaths,
         NewRecovered: chooseCountry[0].NewRecovered,
         TotalRecovered: chooseCountry[0].TotalRecovered,
-        checkCountry : chooseCountry[0], 
+        checkCountry : chooseCountry[0] 
       
         });
         return chooseCountry.Country
@@ -56,27 +56,23 @@ function AffCont(props) {
             <ul key={idx}>
                
             <li onClick={() => handleClick(`${items.CountryCode}`)}  className={`${items.CountryCode === coronaCases.checkCountry.CountryCode  ? 'clickTab' : '' }   countryList`}>
-                <div 
+              <Grid item container xs={12}>
+                <Grid item xs={8} 
                 style={{fontWeight : 800, fontSize : 20}}> 
                 <img className='contImage'  src={`https://www.countryflags.io/${items.CountryCode}/shiny/64.png`} 
                  alt={items.CountryCode} /> 
-                {items.Country}
-                </div>
-                <div 
+               {items.Country}
+                </Grid>
+                <Grid item xs={4}
                 style={{color : 'blue', fontWeight : 800, fontSize : 20}}>
-                    {items.TotalConfirmed.toLocaleString()}</div>
+                    {items.TotalConfirmed.toLocaleString()}</Grid>
+                    </Grid>
             </li>
            </ul>
         )
     }
 return null})
-
-
-  
-   
     
-    
-
   const  cases= [
         {
         name : 'Total Cases',
@@ -129,13 +125,13 @@ return null})
                                 {contList}
                             </div>
                         </Grid>
-                        <b style={{top : -10}}>
-                            {coronaCases.countryName}</b>
-                        <Grid item container xs={12} sm={12} md={4} spacing={1}>
-                           
+                        <Grid item container  xs={12} sm={12} md={4} spacing={1}>
+
+                        <Grid item  xs={12} className='countryList'><h2>{coronaCases.countryName}</h2></Grid>  
                             {cases.map((list, idx) => {
                                 return(
-                                    <Grid item xs={6} key={idx}>
+                                   
+                                    <Grid item  xs={6} key={idx}>
                                         <div className='contentInfo'>
                                             
                                             <div>{list.name}</div>
@@ -145,8 +141,8 @@ return null})
                                             {list.Attribute.toLocaleString()}
                                             </div>
                                         </div>
-
-                            </Grid>
+                                    </Grid>
+                            
                                 )
                             })}
                             
