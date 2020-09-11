@@ -127,7 +127,7 @@ return null})
                         </Grid>
                         <Grid item container  xs={12} sm={12} md={4} spacing={1}>
 
-                        <Grid item  xs={12} className='countryList'><h2>{coronaCases.countryName}</h2></Grid>  
+                        <Grid item  xs={12} ><h2> <center>{coronaCases.countryName}</center> </h2></Grid>  
                             {cases.map((list, idx) => {
                                 return(
                                    

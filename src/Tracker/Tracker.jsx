@@ -6,6 +6,7 @@ export default function Tracker(props) {
 
 
   const active = props.covidApi.Global.TotalConfirmed - (props.covidApi.Global.TotalRecovered )
+  const newActive = props.covidApi.Global.NewConfirmed - props.covidApi.Global.NewRecovered
   return (
     <>
 
@@ -33,7 +34,7 @@ export default function Tracker(props) {
                 <div className='casesPink'>
                   <span>Active</span>
                   <span className='Active'>{active.toLocaleString()} </span>
-                  <span style={{ fontSize: 15 }}>+{props.covidApi.Global.NewConfirmed.toLocaleString() - props.covidApi.Global.NewRecovered.toLocaleString()} </span>
+                  <span style={{ fontSize: 15 }}>+{newActive.toLocaleString()} </span>
                 </div>
 
 
